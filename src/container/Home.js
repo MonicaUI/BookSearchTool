@@ -10,7 +10,7 @@ function Home() {
     const [search, setSearch] = useState('')
     const [searchBooks, setSearchBooks] = useState([])
     const [trendingBooks, setTrendingBooks] = useState([])
-    const [isLoading, setLoading] = useState(false)
+    const [isLoading, setLoading] = useState(true)
 
 
     // Pagination
@@ -36,6 +36,9 @@ function Home() {
                 })
                 const dataAPI = await initResponse.json()
                 setTrendingBooks(dataAPI.works)
+                // if (initResponse.status === 200) {
+                //     setLoading(true)
+                // }
                 const response = await fetch(apiUrl, {
                     signal: controller.signal,
                 })
@@ -98,7 +101,8 @@ function Home() {
             />
             <div className="Home-book">
                 <p> Welcome to Open Library </p>
-                {/* {trendingBooks.length !== 0 && ? <p className='trending-now'> Trending Books </p> : null} */}
+                {isLoading ?
+                    <LoadingSpinner /> : ''}
                 <div className="trending">
                     {searchBooks.length === 0 && trendingBooks.length > 0 ? <p className='trending-now'> Trending Books </p> : null}
                     {searchBooks.length === 0 && trendingBooks.length > 0 ? (trendingBooks.slice(0, visible).map((book) => {
@@ -128,6 +132,7 @@ function Home() {
                             />
                         )
                     })) : ''}
+
                 </div>
             </div>
             <div>
@@ -138,7 +143,7 @@ function Home() {
                         <button onClick={handleFirstPublish}>First published</button>
                     </div>)
                     : null}
-                {isLoading ? <LoadingSpinner /> : null}
+
 
                 {searchBooks.slice(0, visible).map((book) => {
                     return (
