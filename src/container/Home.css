@@ -1,0 +1,29 @@
+.Home-book {
+    margin: auto;
+    padding: 40px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.trending {
+    display: flex;
+    padding: 40px;
+}
+
+.trending-now {
+    text-decoration: underline;
+    min-width: 150px;
+}
+
+.sort-books {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sort-books>button {
+    border: transparent;
+    background-color: transparent;
+    text-decoration: underline;
+    padding: 0 10px;
+}

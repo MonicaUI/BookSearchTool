@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+    --color-primary: #c1d5e0;
+    --color-background: #f5f5f6;
+    --color-dark: #62757f;
+    --color-text-title: #000000;
+    --color-text-main: rgba(0, 0, 0, 0.7);
+    --color-text-placeholder: rgba(0, 0, 0, 0.5);
+    --color-text-button: #ffffff;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-background);
+}
+
+.searchbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.searchbar .searchbar__input {
+    border: none;
+    border-radius: 0.625rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-title);
+    font-size: 1rem;
+    padding-left: 0.625rem;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    width: 40vw;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.searchbar .searchbar__input::-webkit-input-placeholder {
+    color: var(--color-text-placeholder);
+}
+
+.searchbar .searchbar__input:-ms-input-placeholder {
+    color: var(--color-text-placeholder);
+}
+
+.searchbar .searchbar__input::-ms-input-placeholder {
+    color: var(--color-text-placeholder);
+}
+
+.searchbar .searchbar__input::placeholder {
+    color: var(--color-text-placeholder);
+}
+
+.searchbar .searchbar__input:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.searchbar .searchbar__input:focus {
+    opacity: 0.9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.searchbar .searchbar__button {
+    border: none;
+    border-radius: 0.625rem;
+    background-color: var(--color-dark);
+    color: var(--color-text-button);
+    margin-left: 4px;
+    padding: 0.625rem;
+    font-size: 1rem;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.searchbar .searchbar__button:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.searchbar .searchbar__button:active {
+    opacity: 0.9;
+}

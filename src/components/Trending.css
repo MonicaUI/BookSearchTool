@@ -1,0 +1,15 @@
+.trending {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 0.75rem;
+    background-color: var(--color-primary);
+    border-radius: 0.625rem;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}

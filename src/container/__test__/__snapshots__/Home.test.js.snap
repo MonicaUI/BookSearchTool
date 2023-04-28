@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Home page 1`] = `
+<div>
+  <div
+    className="searchbar"
+  >
+    <input
+      className="searchbar__input"
+      id="search-input"
+      onChange={[Function]}
+      placeholder="Book Title"
+      type="text"
+    />
+    <button
+      className="searchbar__button"
+      id="search-button"
+      onClick={[Function]}
+    >
+      Search
+    </button>
+  </div>
+  <div
+    className="Home-book"
+  >
+    <p>
+       Welcome to Open Library 
+    </p>
+    <div
+      className="trending"
+    />
+  </div>
+  <div />
+</div>
+`;
