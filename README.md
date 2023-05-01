@@ -35,7 +35,7 @@ $animationSpeed: 20s;
 
 3. How would you track down a performance issue in production? Have you ever had to do this?
 
-Had experience in doing WDIO testing to automate performance. But no time to implement here but tried lighthouse to track the performance
+Had experience in doing WDIO testing to automate performance. Also there is an option of doing debouncing to improve code performance. But no time to implement here but tried lighthouse to track the performance
 
 4. How would you improve the API that you just used?
 
